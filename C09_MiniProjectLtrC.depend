@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1792162976 source:c:\users\dell\documents\filec\a04\c09_miniprojectltrc\chuc_nang_1.c
+	<stdio.h>
+	"rapphim.h"
+
+1792162930 c:\users\dell\documents\filec\a04\c09_miniprojectltrc\rapphim.h
+
+1792162992 source:c:\users\dell\documents\filec\a04\c09_miniprojectltrc\chuc_nang_4.c
+	<stdio.h>
+	<time.h>
+	"rapphim.h"
+
+1792163121 source:c:\users\dell\documents\filec\a04\c09_miniprojectltrc\chuc_nang_5.c
+	<stdio.h>
+	"rapphim.h"
+
+1792163075 source:c:\users\dell\documents\filec\a04\c09_miniprojectltrc\chuc_nang_morong1.c
+	<stdio.h>
+	"rapphim.h"
+
+1792160324 source:c:\users\dell\documents\filec\a04\c09_miniprojectltrc\main.c
+	<stdio.h>
+	"rapphim.h"
+
+1792162987 source:c:\users\dell\documents\filec\a04\c09_miniprojectltrc\chuc_nang_3.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	"rapphim.h"
+
+1792162981 source:c:\users\dell\documents\filec\a04\c09_miniprojectltrc\chuc_nang_2.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	"rapphim.h"
+

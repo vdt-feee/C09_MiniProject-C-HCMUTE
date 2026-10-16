@@ -3,10 +3,13 @@
 #include <ctype.h>   // Dùng cho hàm toupper (chuyển chữ thường thành hoa)
 #include "rapphim.h"
 
-float datVe(int so_do[8][10]) {
+float DatVe(int so_do[8][10]) {
     int so_luong;
     float tong_tien = 0;
     int kiem_tra;
+
+    char hang; // Khai báo sẵn ở đây
+    int cot;   // Khai báo sẵn ở đây
 
     printf("\n--- DAT VE XEM PHIM ---\n");
 
@@ -21,7 +24,7 @@ float datVe(int so_do[8][10]) {
         } else if (so_luong <= 0 || so_luong > 80) {
             printf("Loi: So luong ghe khong hop le!\n");
         }
-    }while(kiem_tra == 0 || so_luong <= 0 || so_luong > 80);
+    } while (kiem_tra == 0 || so_luong <= 0 || so_luong > 80);
 
     // Vòng lặp cho phép chọn từng ghế
     for(int i = 0; i < so_luong; i++) {
@@ -36,10 +39,10 @@ float datVe(int so_do[8][10]) {
             // --- THUẬT TOÁN DỊCH TỌA ĐỘ ---
 
             // Lấy ký tự đầu tiên, ép thành chữ HOA (lỡ người dùng gõ 'a5' thì biến thành 'A')
-            char hang = toupper(toa_do[0]);
+            hang = toupper(toa_do[0]);
 
             // Bỏ qua ký tự đầu, lấy phần đuôi ép thành số nguyên (VD: "5" -> 5, "10" -> 10)
-            int cot = atoi(&toa_do[1]);
+             cot = atoi(&toa_do[1]);
 
             // Dịch chữ sang chỉ số mảng: 'A' - 'A' = 0; 'B' - 'A' = 1...
             r = hang - 'A';

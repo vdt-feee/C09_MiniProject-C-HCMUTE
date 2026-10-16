@@ -4,7 +4,7 @@
 // ==========================================
 // HÀM 1: LƯU SƠ ĐỒ XUỐNG FILE (Ghi nhớ)
 // ==========================================
-void luuFileSoDo(int so_do[8][10]) {
+void LuuFileSoDo(int so_do[8][10]) {
     // Mở file ở chế độ "w" (Write - Viết/Ghi đè)
     FILE *file = fopen("DuLieuRapPhim.txt", "w");
 
@@ -28,7 +28,7 @@ void luuFileSoDo(int so_do[8][10]) {
 // ==========================================
 // HÀM 2: ĐỌC SƠ ĐỒ TỪ FILE (Phục hồi trí nhớ)
 // ==========================================
-void docFileSoDo(int so_do[8][10]) {
+void DocFileSoDo(int so_do[8][10]) {
     // Mở file ở chế độ "r" (Read - Đọc)
     FILE *file = fopen("DuLieuRapPhim.txt", "r");
 
@@ -56,7 +56,7 @@ void docFileSoDo(int so_do[8][10]) {
 // ==========================================
 // HÀM 3: THỐNG KÊ DOANH THU & LẤP ĐẦY
 // ==========================================
-void thongKeRapPhim(int so_do[8][10]) {
+void ThongKeRapPhim(int so_do[8][10]) {
     int ghe_da_dat = 0;
     float doanh_thu = 0;
 

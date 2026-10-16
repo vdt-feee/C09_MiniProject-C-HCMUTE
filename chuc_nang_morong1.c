@@ -35,13 +35,12 @@ void N_GheLienNhau(int so_do[8][10]) {
                 int ghe_bat_dau = (j - n + 1) + 1;
                 int ghe_ket_thuc = j + 1;
 
-                printf("-> Goi y day ghe dep: tu %c%d den %c%d.\n",
-                       hang, ghe_bat_dau, hang, ghe_ket_thuc);
+                printf("-> Goi y day ghe dep: tu %c%d den %c%d.\n", hang, ghe_bat_dau, hang, ghe_ket_thuc);
 
                 return; // Xong việc, thoát hàm luôn
             }
         }
     }
 
-    printf("Ranh tiec! Hien tai rap khong con %d ghe xep lien nhau.\n", n);
+    printf("Hien tai rap khong con %d ghe xep lien nhau.\n", n);
 }

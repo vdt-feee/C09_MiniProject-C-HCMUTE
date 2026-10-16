@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "rapphim.h" // Nhúng bản hợp đồng chung vào
 
-void hienThiSoDo(int so_do[8][10]) {
+void HienThiSoDo(int so_do[8][10]) {
     printf("\n===================================================\n");
     printf("                  MAN HINH CHIEU                   \n");
     printf("===================================================\n\n");

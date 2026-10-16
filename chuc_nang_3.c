@@ -3,10 +3,12 @@
 #include <ctype.h>
 #include "rapphim.h"
 
-void huyVe(int so_do[8][10]) {
+void HuyVe(int so_do[8][10]) {
     char toa_do[10];
     int r, c;
     int hop_le = 0;
+    char hang; // Khai báo sẵn ở đây
+    int cot;
 
     printf("\n--- HUY VE XEM PHIM ---\n");
 
@@ -22,8 +24,8 @@ void huyVe(int so_do[8][10]) {
         }
 
         // --- TÁI SỬ DỤNG THUẬT TOÁN CHUYỂN ĐỔI TỌA ĐỘ CỦA CHỨC NĂNG 2 ---
-        char hang = toupper(toa_do[0]);
-        int cot = atoi(&toa_do[1]);
+        hang = toupper(toa_do[0]);
+        cot = atoi(&toa_do[1]);
 
         r = hang - 'A';
         c = cot - 1;

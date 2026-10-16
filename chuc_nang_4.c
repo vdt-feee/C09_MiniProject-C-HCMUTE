@@ -2,7 +2,7 @@
 #include <time.h> // Dùng để lấy giờ hệ thống in lên vé
 #include "rapphim.h"
 
-void inHoaDon(float tong_tien) {
+void InHoaDon(float tong_tien) {
     // Nếu tổng tiền bằng 0 (người dùng chưa đặt ghế nào hoặc vừa hủy vé), thì không in hóa đơn.
     if (tong_tien <= 0) {
         return;

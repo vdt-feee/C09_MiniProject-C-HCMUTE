@@ -1,4 +1,3 @@
-// File: rapphim.h
 #ifndef RAPPHIM_H
 #define RAPPHIM_H
 
