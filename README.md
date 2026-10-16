@@ -22,4 +22,4 @@
 ### 3. Hướng dẫn biên dịch và chạy (Nếu dùng Dev-C++ / Code::Blocks):
 - **Bước 1:** Tạo một Project mới (File -> New -> Project -> Console Application).
 - **Bước 2:** Kéo thả toàn bộ các file `.c` và `.h` vào chung Project này.
-- **Bước 3:** Bấm phím F11 (Compile & Run) để chạy.
+- **Bước 3:** Bấm phím F11 (Compile & Run) để chạy, nếu xài CodeBlocks thì nhấn F9.
