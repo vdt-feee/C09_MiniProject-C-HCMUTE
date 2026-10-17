@@ -3,7 +3,6 @@
 #include "rapphim.h"
 
 int main() {
-    // Khoi tao mang 2 chieu quan ly 80 ghe ngoi
     int so_do_rap[8][10];
 
     int chon;

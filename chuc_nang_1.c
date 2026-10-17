@@ -6,7 +6,7 @@ void HienThiSoDo(int so_do[8][10]) {
     printf("                  MAN HINH CHIEU                   \n");
     printf("===================================================\n\n");
 
-    // 1. In dải số thứ tự cột từ 1 đến 10 ở trên cùng
+
     printf("     "); // Thụt vào một chút để chừa chỗ cho cột tên hàng (A, B, C...)
     for(int j = 1; j <= 10;j++) {
         printf("%-4d", j); // %-4d giúp căn lề trái mỗi số chiếm đúng 4 khoảng trắng cho ngay ngắn
@@ -35,7 +35,7 @@ void HienThiSoDo(int so_do[8][10]) {
             }
         }
 
-        // Trực quan hóa 2 hàng VIP (G và H, tương ứng với hàng số 6 và 7 trong mảng)
+        // 2 hàng VIP (G và H, tương ứng với hàng số 6 và 7 trong mảng)
         if(i == 6 || i == 7) {
             printf(" (VIP)");
         }

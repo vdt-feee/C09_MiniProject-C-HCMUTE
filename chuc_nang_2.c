@@ -8,8 +8,8 @@ float DatVe(int so_do[8][10]) {
     float tong_tien = 0;
     int kiem_tra;
 
-    char hang; // Khai báo sẵn ở đây
-    int cot;   // Khai báo sẵn ở đây
+    char hang;
+    int cot;
 
     printf("\n--- DAT VE XEM PHIM ---\n");
 
@@ -24,19 +24,19 @@ float DatVe(int so_do[8][10]) {
         } else if (so_luong <= 0 || so_luong > 80) {
             printf("Loi: So luong ghe khong hop le!\n");
         }
-    } while (kiem_tra == 0 || so_luong <= 0 || so_luong > 80);
+    } while(kiem_tra == 0 || so_luong <= 0 || so_luong > 80);
 
     // Vòng lặp cho phép chọn từng ghế
     for(int i = 0; i < so_luong; i++) {
         char toa_do[10];
-        int r, c; // r: row (hàng), c: column (cột)
+        int r, c;       // r: row (hàng), c: column (cột)
         int hop_le = 0; // Cờ đánh dấu kiểm tra trạng thái
 
         do {
             printf("Nhap toa do ghe thu %d (VD: A5, H10): ", i + 1);
             scanf("%s", toa_do);
 
-            // --- THUẬT TOÁN DỊCH TỌA ĐỘ ---
+            // Thao tác chuyển đổi input sao cho phù hợp với code
 
             // Lấy ký tự đầu tiên, ép thành chữ HOA (lỡ người dùng gõ 'a5' thì biến thành 'A')
             hang = toupper(toa_do[0]);
@@ -50,7 +50,7 @@ float DatVe(int so_do[8][10]) {
             // Dịch cột sang chỉ số mảng: Cột 5 thì nằm ở vị trí số 4 trong mảng
             c = cot - 1;
 
-            // --- BẮT LỖI TỌA ĐỘ ---
+            // Bắt lỗi sai Tọa độ
 
             // Lỗi 1: Nhập tào lao (VD: Z99, A15)
             if(r < 0 || r > 7 || c < 0 || c > 9) {
@@ -67,10 +67,9 @@ float DatVe(int so_do[8][10]) {
 
         }while (hop_le == 0);
 
-        // 3. Cập nhật mảng và Tính tiền ngay lập tức
         so_do[r][c] = 1; // Đánh dấu là đã đặt
 
-        // Hàng G (r=6) và hàng H (r=7) là ghế VIP giá 100.000đ, còn lại 70.000 vnd
+        // Hàng G (r=6) và hàng H (r=7) là ghế VIP giá 100 000 vnd, còn lại 70.000 vnd
         float gia_ve = (r == 6 || r == 7) ? 100000.0 : 70000.0;
         tong_tien += gia_ve;
 

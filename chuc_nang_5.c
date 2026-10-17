@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include "rapphim.h"
 
-// ==========================================
 // HÀM 1: LƯU SƠ ĐỒ XUỐNG FILE (Ghi nhớ)
-// ==========================================
+
+
 void LuuFileSoDo(int so_do[8][10]) {
     // Mở file ở chế độ "w" (Write - Viết/Ghi đè)
     FILE *file = fopen("DuLieuRapPhim.txt", "w");
@@ -13,7 +13,6 @@ void LuuFileSoDo(int so_do[8][10]) {
         return;
     }
 
-    // Dùng 2 vòng lặp quét mảng, in các số 0 và 1 vào file
     for (int i = 0; i < 8; i++) {
         for (int j = 0; j < 10; j++) {
             // fprintf hoạt động y hệt printf, nhưng nó in vào file thay vì in ra màn hình
@@ -22,12 +21,11 @@ void LuuFileSoDo(int so_do[8][10]) {
         fprintf(file, "\n"); // Hết 10 cột thì xuống dòng trong file cho đẹp
     }
 
-    fclose(file); // Nhớ đóng file lại sau khi ghi xong!
+    fclose(file);
 }
 
-// ==========================================
-// HÀM 2: ĐỌC SƠ ĐỒ TỪ FILE (Phục hồi trí nhớ)
-// ==========================================
+// HÀM 2: ĐỌC SƠ ĐỒ TỪ FILE
+
 void DocFileSoDo(int so_do[8][10]) {
     // Mở file ở chế độ "r" (Read - Đọc)
     FILE *file = fopen("DuLieuRapPhim.txt", "r");
@@ -53,9 +51,8 @@ void DocFileSoDo(int so_do[8][10]) {
     fclose(file);
 }
 
-// ==========================================
 // HÀM 3: THỐNG KÊ DOANH THU & LẤP ĐẦY
-// ==========================================
+
 void ThongKeRapPhim(int so_do[8][10]) {
     int ghe_da_dat = 0;
     float doanh_thu = 0;

@@ -12,7 +12,6 @@ void N_GheLienNhau(int so_do[8][10]) {
         return;
     }
 
-    // Chỉ còn 2 vòng lặp duyệt hàng và cột
     for (int i = 0; i < 8; i++) {
 
         int dem_ghe_trong = 0; // Bộ đếm: Sang hàng mới thì phải reset về 0
@@ -37,7 +36,7 @@ void N_GheLienNhau(int so_do[8][10]) {
 
                 printf("-> Goi y day ghe dep: tu %c%d den %c%d.\n", hang, ghe_bat_dau, hang, ghe_ket_thuc);
 
-                return; // Xong việc, thoát hàm luôn
+                return;
             }
         }
     }

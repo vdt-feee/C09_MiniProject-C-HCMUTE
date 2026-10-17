@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <time.h> // Dùng để lấy giờ hệ thống in lên vé
+#include <time.h>
 #include "rapphim.h"
 
 void InHoaDon(float tong_tien) {

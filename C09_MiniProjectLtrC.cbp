@@ -46,6 +46,9 @@
 		<Unit filename="chuc_nang_5.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="chuc_nang_morong1.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

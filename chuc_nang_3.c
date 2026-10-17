@@ -7,7 +7,7 @@ void HuyVe(int so_do[8][10]) {
     char toa_do[10];
     int r, c;
     int hop_le = 0;
-    char hang; // Khai báo sẵn ở đây
+    char hang;
     int cot;
 
     printf("\n--- HUY VE XEM PHIM ---\n");
@@ -23,14 +23,14 @@ void HuyVe(int so_do[8][10]) {
             return; // Lệnh return sẽ kết thúc hàm ngay lập tức và quay về Menu chính
         }
 
-        // --- TÁI SỬ DỤNG THUẬT TOÁN CHUYỂN ĐỔI TỌA ĐỘ CỦA CHỨC NĂNG 2 ---
+        // ---  SỬ DỤNG LẠI THUẬT TOÁN CHUYỂN ĐỔI CỦA CHỨC NĂNG 2 ---
         hang = toupper(toa_do[0]);
         cot = atoi(&toa_do[1]);
 
         r = hang - 'A';
         c = cot - 1;
 
-        // --- LÀM NGƯỢC LẠI VỚI DEV 2 ---
+        //  LÀM NGƯỢC LẠI VỚI dev 2
 
         // Lỗi 1: Tọa độ nằm ngoài không gian rạp chiếu
         if(r < 0 || r > 7 || c < 0 || c > 9) {
