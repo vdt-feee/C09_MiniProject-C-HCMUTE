@@ -8,7 +8,7 @@ void HienThiSoDo(int so_do[8][10]);
 float DatVe(int so_do[8][10]);
 
 // 3. Chuc nang huy ve
-void HuyVe(int so_do[8][10]);
+float HuyVe(int so_do[8][10]);
 
 // 4. Chuc nang in hoa don
 void InHoaDon(float tong_tien);
