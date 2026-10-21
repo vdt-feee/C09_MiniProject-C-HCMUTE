@@ -1,3 +1,6 @@
+// Phan Quang Thành, Mã số sinh viên: 26119188
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
@@ -31,8 +34,8 @@ float DatVe(int so_do[8][10]) {
 
     // 2. Vòng lặp cho phép chọn từng ghế
     for (int i = 0; i < so_luong; i++) {
-        char toa_do[10];
-        int r, c, hop_le = 0;
+        char toa_do[10]; // Mảng chuỗi A10 -> Chuỗi, số 10 đằng sau A nó cũng vẫn là chuỗi
+        int r, c, hop_le = 0; // r = row, c = column
 
         do {
             printf("Nhap toa do ghe thu %d (VD: A5) hoac go '0' de dung: ", i + 1);
@@ -43,11 +46,11 @@ float DatVe(int so_do[8][10]) {
                 printf("-> Da dung qua trinh dat ve. Cac ghe da chon se duoc giu lai.\n");
                 goto KetThucDatVe; // Nhảy thẳng xuống phần tính tổng tiền ở cuối hàm
             }
-
             // Thuật toán dịch tọa độ
-            char hang = toupper(toa_do[0]);
+            char hang = toupper(toa_do[0]); // a10 -> A10
             int cot = atoi(&toa_do[1]);
-            r = hang - 'A';
+            r = hang - 'A'; // bien thành số int, ASCII 65
+    //  int r = 'B' - 'A' => Số int; 66 - 65 = 1 => 1 sẽ là số nguyên
             c = cot - 1;
 
             // Bắt lỗi tọa độ

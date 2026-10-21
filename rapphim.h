@@ -1,6 +1,8 @@
 #ifndef RAPPHIM_H
 #define RAPPHIM_H
 
+//HEADER
+
 // 1. Chuc nang hien thi so do
 void HienThiSoDo(int so_do[8][10]);
 

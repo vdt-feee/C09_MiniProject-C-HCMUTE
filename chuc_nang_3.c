@@ -1,3 +1,6 @@
+// // Trần Ngọc Thắng, Mã số sinh viên: 26119192
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
@@ -42,5 +45,5 @@ float HuyVe(int so_do[8][10]) {
     printf("-> Da huy thanh cong ghe %c%d.\n", hang, cot);
     printf("-> So tien duoc khau tru (hoan lai): %.0f d\n", tien_hoan);
 
-    return tien_hoan; // Đưa tiền này về cho main.c xử lý
+    return tien_hoan; // Quăng cục tiền này về cho main.c xử lý
 }

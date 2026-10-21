@@ -1,3 +1,6 @@
+// Nguyễn Ngọc Thịnh, Mã số sinh viên: 26119199
+
+
 #include <stdio.h>
 #include "rapphim.h"
 

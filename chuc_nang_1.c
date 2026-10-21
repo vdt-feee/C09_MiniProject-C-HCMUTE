@@ -1,3 +1,7 @@
+// Cao Thanh Tuấn, Mã số sinh viên: 26119217
+// Trần Thành Long, Mã số sinh viên: 26119148
+
+
 #include <stdio.h>
 #include "rapphim.h" // Nhúng bản hợp đồng chung vào
 

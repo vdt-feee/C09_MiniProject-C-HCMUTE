@@ -1,3 +1,5 @@
+// Nguyễn Công Thuận, Mã số sinh viên: 26119203
+
 #include <stdio.h>
 #include <time.h>
 #include "rapphim.h"
@@ -11,6 +13,7 @@ void InHoaDon(float tong_tien) {
     // Lấy thời gian thực của hệ thống để in lên vé
     time_t t = time(NULL);
     struct tm time_now = *localtime(&t);   // struct tm : kiểu dữ liệu; time_now là tên biến
+
 
     printf("\n");
     printf("************************************************\n");
