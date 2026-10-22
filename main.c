@@ -85,7 +85,7 @@ int main() {
                         }
                     }
                     printf("-> Da don dep rap sach se. Toan bo ghe da tro ve trang thai TRONG!\n");
-
+                    break;
                 case 0:
                     printf("Tam biet! Chuong trinh dang duoc dong lai...\n");
                     break;
